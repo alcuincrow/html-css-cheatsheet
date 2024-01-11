@@ -1,0 +1,40 @@
+html {
+    font-family: monospace, 'Courier New', Courier, sans-serif;
+    background-color: darkgray;
+}
+
+#main {
+    padding: 40px;
+    margin: 20px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-family: monospace, 'Courier New', Courier, sans-serif;
+    text-align: center;
+}
+
+tr :hover {
+    background-color: lightgreen;
+}
+
+th, tfoot {
+    background-color: lightgray;
+}
+
+td {
+    background-color: antiquewhite;
+}
+
+.tableTags {
+    background-color: lightblue;
+}
+
+.tableAtts {
+    background-color: lightsalmon;
+}
