@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="html">
-    <head>
-        <title>Alcuin's Cheat sheet</title>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <!--Title and Navigation-->
-        <header>
+
+<head>
+    <title>Alcuin's Cheat sheet</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--Title and Navigation-->
+    <header>
+        <div id="wrapper">
             <h1>Alcuin's Cheat sheet</h1>
             <nav>
                 <div id="navBar">
@@ -17,103 +20,116 @@
                     </ul>
                 </div>
             </nav>
-        </header>
-        <!--Main page content-->
-        <div id="main">
-            <table><caption>HTML Table Cheat Sheet</caption>
-                <thead>
-                    <tr>
-                        <th class="tableTags">
-                            Table Tags
-                        </th>
-                        <th>
-                            Short Description Of Use
-                        </th>
-                        <th>
-                            Extra Columns
-                        </th>
-                        <th>Results of spanning</th>
-                    </tr>
-                </thead>
-                <tbody>
-                   
-                    <tr>
-                        <td class="tableTags">&lt;table&gt;</td>
-                        <td>This tag starts a table element</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;thead&gt;</td>
-                        <td>This is used for setting the heading area</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;th&gt;</td>
-                        <td>Sets the table heading at the top of columns</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;tr&gt;</td>
-                        <td>Sets the rows, parent element to &lt;td&gt;</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;td&gt;</td>
-                        <td>Sets the content/data of rows</td>
-                        <td>empty &lt;td&gt; tags will show empty boxes.</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;tbody&gt;</td>
-                        <td>This tag contains the main body of the table</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableTags">&lt;tfoot&gt;</td>
-                        <td>Sets the footer, totals and such commonly live here</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="tableAtts">
-                            scope attribute
-                        </td>
-                        <td>Is used to assign heading to rows or columns</td>
-                        <td>&lt;th scope="row"&gt;</td>
-                        <td>&lt;th scope="col"&gt;</td>
-                    </tr>
-                    <tr>
-                        <td class="tableAtts">colspan attribute</td>
-                        <td colspan="2">Spans text across multiple columns, horizontally</td>
-                        <td>Moved due to colspan</td>
-                    </tr>
-                    <tr>
-                        <td class="tableAtts">rowspan attribute</td>
-                        <td rowspan="2">Spans text across multiple rows vertically</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Example</td>
-                        <td>&lt;rowspan&gt; can push over data to a different row</td>
-                        <td>Moved due to rowspan</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Footer</td>
-                        <td></td>
-                        <td>Footer</td>
-                        <td></td>
-                    </tr>
-                </tfoot>
-            </table>
         </div>
-        <!--Footer content-->
-    </body>
+    </header>
+    <!--Main page content-->
+    <div id="intro" class="container">
+        <p>Welcome to my cheat sheet. <br>
+            This is where I keep HTML and CSS examples for reference.<br>
+            Feel free to look around.</p>
+    </div>
+    <div id="tableExample" class="container">
+        <table>
+            <caption>HTML Table Cheat Sheet</caption>
+            <thead>
+                <tr>
+                    <th class="tableTags">
+                        Table Tags
+                    </th>
+                    <th>
+                        Short Description Of Use
+                    </th>
+                    <th>
+                        Extra Columns
+                    </th>
+                    <th>Results of spanning</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="tableTags">&lt;table&gt;</td>
+                    <td>This tag starts a table element</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;thead&gt;</td>
+                    <td>This is used for setting the heading area</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;th&gt;</td>
+                    <td>Sets the table heading at the top of columns</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;tr&gt;</td>
+                    <td>Sets the rows, parent element to &lt;td&gt;</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;td&gt;</td>
+                    <td>Sets the content/data of rows</td>
+                    <td>empty &lt;td&gt; tags will show empty boxes.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;tbody&gt;</td>
+                    <td>This tag contains the main body of the table</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableTags">&lt;tfoot&gt;</td>
+                    <td>Sets the footer, totals and such commonly live here</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="tableAtts">
+                        scope attribute
+                    </td>
+                    <td>Is used to assign heading to rows or columns</td>
+                    <td>&lt;th scope="row"&gt;</td>
+                    <td>&lt;th scope="col"&gt;</td>
+                </tr>
+                <tr>
+                    <td class="tableAtts">colspan attribute</td>
+                    <td colspan="2">Spans text across multiple columns, horizontally</td>
+                    <td>Moved due to colspan</td>
+                </tr>
+                <tr>
+                    <td class="tableAtts">rowspan attribute</td>
+                    <td rowspan="2">Spans text across multiple rows vertically</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Example</td>
+                    <td>&lt;rowspan&gt; can push over data to a different row</td>
+                    <td>Moved due to rowspan</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Footer</td>
+                    <td></td>
+                    <td>Footer</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!--Footer content-->
+    <footer>
+        <div>
+            <p><a href="https://alcuincrow.github.io/docs/">© alcuincrow.github.io/docs 2024</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>

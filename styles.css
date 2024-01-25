@@ -6,52 +6,14 @@
 
 html {
     font-family: monospace, 'Courier New', Courier, sans-serif;
-}
-header {
-    background-color: #2972CC;
+
 }
 
-.container {
+body {
+    background-color: #3D6799;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-/* Navigation styles */
-#navBar {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    background-color: #2972CC;
-    
-}
-
-#navBar ul {
-    margin: 0 auto;
-    display: inline-flex;
-    
-
-}
-
-#navBar li, a {
-    list-style-type: none;
-    text-decoration: none;
-    padding: 5px;
-    color: #FFFFFF;
-    cursor: pointer;
-    
-}
-
-#navbar li, a:hover {
-    color: #000000;
-}
-
-
-/* main content */
-#main {
-    padding: 40px;
-    margin: 20px;
-
 }
 
 h1 {
@@ -60,10 +22,87 @@ h1 {
 
 
 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 60px
+}
+
+/* heading styles */
+#wrapper {
+    background-color: #2972CC;
+    position: fixed;
+    flex-direction: row;
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    justify-content: space-evenly;
+}
+
+#wrapper h1 {
+    padding-right: 20px;
+}
+
+
+/* Navigation styles */
+#navBar {
+    height: 50px;
+    padding: 5px;
+    margin-left: 35px;
+
+}
+
+#navBar ul {
+    margin: 0 auto;
+    display: inline-flex;
+
+
+}
+
+#navBar li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+#navbar li,
+a:hover {
+    color: #000000;
+}
+
+
+/* main content */
+
+#intro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 55px 20px;
+}
+
+
+
+
 
 
 /* table styles */
-table, th, td {
+#tableExample {
+    display: flex;
+    position: relative;
+    top: 70px;
+    padding: 40px;
+}
+
+table,
+th,
+td {
     border: 1px solid black;
     font-family: monospace, 'Courier New', Courier, sans-serif;
     text-align: center;
@@ -73,7 +112,8 @@ tr :hover {
     background-color: lightgreen;
 }
 
-th, tfoot {
+th,
+tfoot {
     background-color: lightgray;
 }
 
@@ -94,16 +134,44 @@ td {
     background-color: #3D6799;
     text-align: center;
     padding: 50px;
+    justify-content: center;
 }
+
 
 #tips h1 {
     padding: 20px
 }
 
-#tips img {
-    height: 500px;
+.flexImg {
     display: flex;
-    flex-flow: row nowrap;
     align-items: center;
+    margin: 0 auto;
 }
-/* Images aren't resizing quite as they should, fix this soon */
+
+/* fixed image resizing issues below */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    color: #000000;
+    position: relative;
+    top: 40px;
+    justify-content: center;
+    background-color: #292D33;
+    height: 100px;
+    margin-top: auto;
+
+}
+
+footer p {
+    color: #FFFFFF;
+    padding-top: 50px;
+}
