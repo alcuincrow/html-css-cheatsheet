@@ -1,8 +1,53 @@
-html {
-    font-family: monospace, 'Courier New', Courier, sans-serif;
-    background-color: darkgray;
+/* Universal styles */
+* {
+    padding: 0;
+    margin: 0;
 }
 
+html {
+    font-family: monospace, 'Courier New', Courier, sans-serif;
+}
+header {
+    background-color: #2972CC;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Navigation styles */
+#navBar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    background-color: #2972CC;
+    
+}
+
+#navBar ul {
+    margin: 0 auto;
+    display: inline-flex;
+    
+
+}
+
+#navBar li, a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+#navbar li, a:hover {
+    color: #000000;
+}
+
+
+/* main content */
 #main {
     padding: 40px;
     margin: 20px;
@@ -13,6 +58,11 @@ h1 {
     text-align: center;
 }
 
+
+
+
+
+/* table styles */
 table, th, td {
     border: 1px solid black;
     font-family: monospace, 'Courier New', Courier, sans-serif;
@@ -38,3 +88,22 @@ td {
 .tableAtts {
     background-color: lightsalmon;
 }
+
+/* comment tips page styles */
+#tips {
+    background-color: #3D6799;
+    text-align: center;
+    padding: 50px;
+}
+
+#tips h1 {
+    padding: 20px
+}
+
+#tips img {
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+/* Images aren't resizing quite as they should, fix this soon */
